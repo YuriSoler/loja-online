@@ -1,21 +1,16 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   imports: [],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrls: ['./home.css'],
 })
 export class Home {
-  tituloPagina: string = 'Bem vindo a minha loja On-Line';
-  subTitulo: string = 'Maior variedade de produtos da america latina';
+  constructor(private router: Router) {}
 
-  constructor() {}
-
-  ngOnInit(): void {
-    console.log('home iniciada...');
-  }
-  verOfertas(): void {
-    alert('botão clicado');
+  irParaProdutos() {
+    this.router.navigate(['/produtos']);
   }
 }
