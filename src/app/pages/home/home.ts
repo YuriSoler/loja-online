@@ -7,10 +7,4 @@ import { Router } from '@angular/router';
   templateUrl: './home.html',
   styleUrls: ['./home.css'],
 })
-export class Home {
-  constructor(private router: Router) {}
-
-  irParaProdutos() {
-    this.router.navigate(['/produtos']);
-  }
-}
+export class Home {}

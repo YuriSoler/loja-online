@@ -1,0 +1,60 @@
+<section class="py-20 px-6 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <!-- Título e descrição -->
+    <h1 class="text-4xl font-bold text-gray-800 text-center mb-4">Cursos Gratuitos</h1>
+    <p class="text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+      Aprenda com a comunidade! Todos os cursos são gratuitos e feitos por membros como você.
+    </p>
+
+    <!-- Barra de busca e botão de adicionar curso -->
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-10">
+      <input type="text" placeholder="Buscar cursos ou criadores..."
+        class="w-full sm:w-1/2 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+
+      <!-- Apenas para usuários com permissão -->
+      <button class="px-6 py-2 bg-green-600 text-white rounded-full font-semibold hover:bg-green-700 transition">
+        Adicionar Curso
+      </button>
+    </div>
+
+    <!-- Lista de cursos -->
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <!-- CARD CURSO -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="/assets/cursos/angular.jpg" alt="Curso Angular" class="w-full h-48 object-cover" />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-gray-800 mb-1">Angular para Iniciantes</h3>
+          <p class="text-gray-500 text-sm mb-2">por <span class="font-medium">Castor</span></p>
+
+          <!-- Avaliação -->
+          <div class="flex items-center text-yellow-500 text-sm mb-3">
+            ⭐⭐⭐⭐☆ (4.0)
+          </div>
+
+          <p class="text-gray-600 text-sm mb-4">Aprenda os fundamentos do Angular com este curso introdutório.</p>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
+            Ver Curso
+          </button>
+        </div>
+      </div>
+
+      <!-- Outro curso -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="/assets/cursos/htmlcss.jpg" alt="Curso de HTML e CSS" class="w-full h-48 object-cover" />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-gray-800 mb-1">HTML e CSS Moderno</h3>
+          <p class="text-gray-500 text-sm mb-2">por <span class="font-medium">CodeWoman</span></p>
+          <div class="flex items-center text-yellow-500 text-sm mb-3">
+            ⭐⭐⭐⭐⭐ (5.0)
+          </div>
+          <p class="text-gray-600 text-sm mb-4">Construa sites responsivos com HTML5 e Tailwind CSS.</p>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition">
+            Ver Curso
+          </button>
+        </div>
+      </div>
+
+      <!-- Adicione mais cursos conforme necessário -->
+    </div>
+  </div>
+</section>

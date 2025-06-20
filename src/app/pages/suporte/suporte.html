@@ -1,0 +1,30 @@
+<section class="py-20 px-6 bg-gray-50 text-gray-800">
+  <div class="max-w-5xl mx-auto text-center">
+    <h1 class="text-4xl font-bold mb-4">Suporte</h1>
+    <p class="text-lg text-gray-600 mb-10">
+      Está com dúvidas ou precisa de ajuda? Entre em contato conosco por um dos canais abaixo:
+    </p>
+
+    <!-- Contatos -->
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-left">
+      <div *ngFor="let contato of contatos" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+        <div class="text-3xl mb-2">{{ contato.icone }}</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-1">{{ contato.tipo }}</h3>
+        <p class="text-sm text-gray-600">{{ contato.descricao }}</p>
+      </div>
+    </div>
+
+    <!-- Canais Diretos -->
+    <div class="text-center space-y-4">
+      <p class="text-lg text-gray-700">
+        <strong>Email:</strong> {{ email }}
+      </p>
+      <p class="text-lg text-gray-700">
+        <strong>Discord:</strong>
+        <a [href]="discord" target="_blank" class="text-blue-600 hover:underline">
+          Acesse nosso servidor
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
